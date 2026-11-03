@@ -1,4 +1,4 @@
-:root { --green: #03c75a; --green-dark: #02b350; --bg: #f2f4f7; --line: #e5e8eb; }
+:root { --green: #ffc800; --green-dark: #b38600; --bg: #fffbe6; --line: #f0e4a8; }
 
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; scroll-padding-top: 130px; }
@@ -11,11 +11,11 @@ ul { list-style: none; }
 /* header */
 #header { position: sticky; top: 0; background: #fff; border-bottom: 1px solid var(--line); z-index: 10; }
 #header .top { display: flex; align-items: center; gap: 30px; height: 76px; }
-.logo { font-size: 28px; font-weight: 900; color: var(--green); letter-spacing: -1px; }
+.logo { font-size: 28px; font-weight: 900; color: var(--green-dark); letter-spacing: -1px; }
 
 .search { flex: 1; display: flex; max-width: 560px; margin: 0 auto; border: 2px solid var(--green); border-radius: 4px; overflow: hidden; }
 .search input { flex: 1; border: 0; outline: 0; padding: 0 16px; height: 44px; font-size: 16px; }
-.search button { width: 70px; border: 0; background: var(--green); color: #fff; font-size: 15px; cursor: pointer; }
+.search button { width: 70px; border: 0; background: var(--green); color: #3a2f00; font-weight: bold; font-size: 15px; cursor: pointer; }
 .search button:hover { background: var(--green-dark); }
 
 .login-btn { padding: 8px 16px; border: 1px solid var(--line); border-radius: 4px; font-size: 14px; }
@@ -24,10 +24,10 @@ ul { list-style: none; }
 #nav { border-top: 1px solid var(--line); }
 #nav ul { display: flex; gap: 8px; height: 46px; align-items: center; }
 #nav a { display: block; padding: 6px 14px; border-radius: 16px; font-size: 15px; font-weight: bold; }
-#nav a:hover { background: #e6f9ee; color: var(--green); }
+#nav a:hover { background: #fff3b8; color: var(--green-dark); }
 
 /* hero */
-.hero { padding: 90px 0; text-align: center; color: #fff; background: linear-gradient(135deg, var(--green), #00a84c); }
+.hero { padding: 90px 0; text-align: center; color: #3a2f00; background: linear-gradient(135deg, #ffe566, #ffc800); }
 .hero h1 { font-size: 38px; margin-bottom: 12px; }
 
 /* cards */
@@ -39,8 +39,12 @@ ul { list-style: none; }
 .about-box { display: flex; gap: 24px; align-items: center; }
 .profile-img { flex: none; width: 120px; height: 120px; border-radius: 50%; background: var(--bg); display: flex; align-items: center; justify-content: center; color: #888; }
 
+.info-list { flex: 1; }
+.info-list li { padding: 6px 0; border-bottom: 1px solid var(--line); }
+.info-list span { display: inline-block; width: 60px; font-weight: bold; color: var(--green-dark); }
+
 .chip-list { display: flex; flex-wrap: wrap; gap: 10px; }
-.chip-list li { padding: 8px 16px; border-radius: 20px; background: #e6f9ee; color: var(--green-dark); font-weight: bold; }
+.chip-list li { padding: 8px 16px; border-radius: 20px; background: #fff3b8; color: var(--green-dark); font-weight: bold; }
 
 .tile-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
 .tile-list li { padding: 50px 20px; text-align: center; background: var(--bg); border-radius: 10px; }
