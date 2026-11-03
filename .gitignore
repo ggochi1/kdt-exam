@@ -1,0 +1,99 @@
+# =====================================================
+# [최우선] 서버 API 키 / 비밀 정보 - 절대 커밋 금지
+# =====================================================
+# 환경변수 파일
+.env
+.env.*
+!.env.example
+!.env.sample
+*.env
+
+# 키 / 인증서 / 자격증명
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+id_rsa
+id_rsa.*
+id_ed25519
+id_ed25519.*
+credentials.json
+service-account*.json
+*-credentials.json
+secrets.json
+secret.json
+secrets.*
+*.secret
+*.secrets
+
+# API 키 / 설정 파일 (실제 값이 들어가는 파일)
+apikey*
+api-key*
+api_key*
+**/config/secret*
+**/config/local*
+
+# Java / Spring 설정 (DB 비밀번호, API 키 등이 들어갈 수 있음)
+application-local.properties
+application-local.yml
+application-local.yaml
+application-secret*.properties
+application-secret*.yml
+application-prod.properties
+application-prod.yml
+**/src/main/resources/application.properties
+**/src/main/resources/application.yml
+**/src/main/resources/application.yaml
+**/src/main/resources/secret*
+config.properties
+local.properties
+
+# =====================================================
+# Java / 빌드 결과물
+# =====================================================
+out/
+target/
+build/
+bin/
+*.class
+*.jar
+*.war
+*.ear
+.gradle/
+hs_err_pid*
+
+# =====================================================
+# IDE
+# =====================================================
+.idea/
+*.iml
+*.iws
+*.ipr
+.vscode/
+.classpath
+.project
+.settings/
+.apt_generated/
+.factorypath
+
+# =====================================================
+# Node (프런트엔드 확장 대비)
+# =====================================================
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+dist/
+
+# =====================================================
+# OS / 기타
+# =====================================================
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
+*.swp

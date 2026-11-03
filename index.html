@@ -3,31 +3,77 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>KDT 풀스택 4회차</title>
-    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>정민교 | 자기소개</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div id="wrap">
-        <div id="margin_wrap">
-            
-            <div id="header">
-                <div id="logo"><h1>안녕하세요 정민교입니다.</h1></div>
-            </div>
-
-            <div id="gnb">
-                <ul class="clearfix" id="nav">
-                    <li>하나</li>
-                    <li>둘</li>
-                    <li>셋</li>
-                    <li>넷</li>
-                    <li>다섯</li>
-                </ul>
-            </div>
-
-            <div id="mainph">
-                <img src="돈 이미지.jfif" alt="돈">
-            </div>
+    <header id="header">
+        <div class="inner top">
+            <a href="#home" class="logo">MINKYO</a>
+            <form class="search" onsubmit="return false;">
+                <input type="text" placeholder="궁금한 것을 검색해 보세요">
+                <button type="submit" aria-label="검색">검색</button>
+            </form>
+            <a href="#contact" class="login-btn">연락하기</a>
         </div>
-    </div>
+        <nav id="nav">
+            <ul class="inner">
+                <li><a href="#home">홈</a></li>
+                <li><a href="#about">소개</a></li>
+                <li><a href="#skills">기술</a></li>
+                <li><a href="#projects">프로젝트</a></li>
+                <li><a href="#contact">연락처</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="inner">
+                <h1>안녕하세요, 정민교입니다.</h1>
+                <p>한 줄 소개를 여기에 작성하세요.</p>
+            </div>
+        </section>
+
+        <div class="inner layout">
+            <section id="about" class="card">
+                <h2>소개</h2>
+                <div class="about-box">
+                    <div class="profile-img">사진</div>
+                    <p>자기소개 내용을 여기에 작성하세요.</p>
+                </div>
+            </section>
+
+            <section id="skills" class="card">
+                <h2>기술</h2>
+                <ul class="chip-list">
+                    <li>기술 1</li>
+                    <li>기술 2</li>
+                    <li>기술 3</li>
+                    <li>기술 4</li>
+                </ul>
+            </section>
+
+            <section id="projects" class="card wide">
+                <h2>프로젝트</h2>
+                <ul class="tile-list">
+                    <li>프로젝트 1</li>
+                    <li>프로젝트 2</li>
+                    <li>프로젝트 3</li>
+                </ul>
+            </section>
+
+            <section id="contact" class="card wide">
+                <h2>연락처</h2>
+                <p>이메일, GitHub 등 연락처를 여기에 작성하세요.</p>
+            </section>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <div class="inner">
+            <p>&copy; 2026 정민교. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
