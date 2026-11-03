@@ -1,0 +1,11 @@
+*{margin: 0; padding: 0;}
+.clearfix::after{content: ""; display: block; clear: both;}
+li{list-style-type: none;}
+#wrap{width: 100%}
+#margin_wrap{width: 1400px; margin: 0 auto;}
+
+#logo h1{text-align: center; background-color: aqua;}
+#nav li{float: left; width: 278px; height: 50px; text-align: center; border: 1px solid black; line-height: 50px; font-size: 20px;}
+
+#mainph{width: 1400px; margin: 0 auto;}
+#mainph img{width: 1200px; margin-left: 100px;}
